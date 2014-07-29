@@ -1,5 +1,3 @@
-node 'cookbook' {
-	file { '/tmp/hello':
-	content => "Hello, Philipppines\n",
-	}
+node 'cookbook', 'cookbook2' {
+	include puppet
 }
